@@ -15,6 +15,7 @@ public class MQListener {
 		String messageData1 = null;
 		String messageData2 = null;
 		String messageData3 = null;
+		String messageData4 = null;
 		if(jsonMessage instanceof TextMessage) {
 			TextMessage textMessage = (TextMessage)jsonMessage;
 			messageData = textMessage.getText();
