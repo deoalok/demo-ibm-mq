@@ -13,6 +13,8 @@ public class MQListener {
 	public void receiveMessage(final Message jsonMessage) throws JMSException{
 		String messageData = null;
 		String messageData1 = null;
+		String messageData2 = null;
+		String messageData3 = null;
 		if(jsonMessage instanceof TextMessage) {
 			TextMessage textMessage = (TextMessage)jsonMessage;
 			messageData = textMessage.getText();
