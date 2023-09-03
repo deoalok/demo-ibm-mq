@@ -12,10 +12,12 @@ public class MQListener {
 	@JmsListener(destination = "${project.mq.TOPIC_NAME}")
 	public void receiveMessage(final Message jsonMessage) throws JMSException{
 		String messageData = null;
+		String messageData1 = null;
 		if(jsonMessage instanceof TextMessage) {
 			TextMessage textMessage = (TextMessage)jsonMessage;
 			messageData = textMessage.getText();
 			System.out.println("reached in Listner");
+			System.out.println("alok ");
 		}
 	}
 }

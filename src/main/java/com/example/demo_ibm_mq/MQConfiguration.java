@@ -101,6 +101,7 @@ public class MQConfiguration {
             //factory.createListenerContainer()
            // factory.setDestinationResolver(destinationResolver());
 
+
             return factory;
         }
 
